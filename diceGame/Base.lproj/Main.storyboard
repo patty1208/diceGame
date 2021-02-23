@@ -1,24 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GpN-0m-TDe">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="buM-iv-juk">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="GpN-0m-TDe" customClass="ViewController" customModule="diceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HC4-6Z-8va">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmu-aU-cI9">
+                                <rect key="frame" x="259" y="545" width="100" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.82745098039999998" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <state key="normal" title="open">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openDiceCup:" destination="GpN-0m-TDe" eventType="touchUpInside" id="cJN-9c-Pbv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQu-l7-x9B">
+                                <rect key="frame" x="21" y="100" width="333" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="骰盅底" translatesAutoresizingMaskIntoConstraints="NO" id="gOw-lh-GfZ">
+                                        <rect key="frame" x="0.0" y="168" width="333" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="8Gm-px-S6w" userLabel="dice_1">
+                                        <rect key="frame" x="165" y="258" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice_5" translatesAutoresizingMaskIntoConstraints="NO" id="Wh5-wZ-61X" userLabel="dice_2">
+                                        <rect key="frame" x="121" y="224" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice_2" translatesAutoresizingMaskIntoConstraints="NO" id="ZCy-R6-46Q" userLabel="dice_3">
+                                        <rect key="frame" x="108" y="291" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice_6" translatesAutoresizingMaskIntoConstraints="NO" id="yBh-fB-UNI" userLabel="dice_4">
+                                        <rect key="frame" x="65" y="252" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice_3" translatesAutoresizingMaskIntoConstraints="NO" id="Cgy-6w-tWS" userLabel="dice_5">
+                                        <rect key="frame" x="214" y="237" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="骰盅蓋" translatesAutoresizingMaskIntoConstraints="NO" id="qOy-NL-669">
+                                        <rect key="frame" x="39" y="43" width="257" height="299"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="骰盅" translatesAutoresizingMaskIntoConstraints="NO" id="mgs-Xa-KTI">
+                                        <rect key="frame" x="-3" y="32" width="338" height="380"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.13725490200000001" green="0.3411764706" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDp-uR-6yJ">
+                                <rect key="frame" x="16" y="545" width="100" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.82745098039999998" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <state key="normal" title=" play ">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shakeDice:" destination="GpN-0m-TDe" eventType="touchUpInside" id="MUq-b8-unS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkH-ip-lO0">
+                                <rect key="frame" x="127" y="674" width="120" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.82745098039999998" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <state key="normal" title="reset">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetDiceButton:" destination="GpN-0m-TDe" eventType="touchUpInside" id="f2D-qq-wWu"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ret-QE-qum">
+                                <rect key="frame" x="138" y="545" width="100" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hZd-dp-Byh">
+                                        <rect key="frame" x="27" y="36" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="checkDiceSwitch:" destination="GpN-0m-TDe" eventType="valueChanged" id="hff-jx-3eI"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="check it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXq-nq-FWQ">
+                                        <rect key="frame" x="24" y="8" width="53" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                        <color key="textColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.82745098039999998" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLUFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0i1-gN-A8f">
+                                <rect key="frame" x="86" y="55" width="203" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.82745098039999998" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.92941176470588238" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-3" height="-3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TXC-4r-76e"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.3411764706" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="checkDiceSwitch" destination="hZd-dp-Byh" id="6YG-iW-Pb2"/>
+                        <outlet property="checkSwitchBackground" destination="Ret-QE-qum" id="JiB-rD-cod"/>
+                        <outlet property="dice1ImageView" destination="8Gm-px-S6w" id="gYO-tE-IsI"/>
+                        <outlet property="dice2ImageView" destination="ZCy-R6-46Q" id="45o-VZ-1Lz"/>
+                        <outlet property="dice3ImageView" destination="ZCy-R6-46Q" id="UNu-Pu-JOl"/>
+                        <outlet property="dice4ImageView" destination="yBh-fB-UNI" id="SQC-aD-yFm"/>
+                        <outlet property="dice5ImageView" destination="Cgy-6w-tWS" id="wwx-wg-fRz"/>
+                        <outlet property="diceCupAll" destination="mgs-Xa-KTI" id="xob-NW-pmF"/>
+                        <outlet property="diceCupTop" destination="qOy-NL-669" id="V33-dU-Q2p"/>
+                        <outlet property="openDiceButton" destination="Zmu-aU-cI9" id="FfR-pG-Ozu"/>
+                        <outlet property="resetButton" destination="kkH-ip-lO0" id="lzQ-Iv-DRW"/>
+                        <outlet property="shakeDiceButton" destination="qDp-uR-6yJ" id="d6k-eh-ylg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0i-2i-pGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-850.39999999999998" y="76.108374384236456"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dice_1" width="84" height="90"/>
+        <image name="dice_2" width="86" height="87"/>
+        <image name="dice_3" width="84" height="86"/>
+        <image name="dice_5" width="84" height="89"/>
+        <image name="dice_6" width="82" height="83"/>
+        <image name="骰盅" width="390" height="488"/>
+        <image name="骰盅底" width="448" height="288"/>
+        <image name="骰盅蓋" width="323" height="407"/>
+    </resources>
 </document>

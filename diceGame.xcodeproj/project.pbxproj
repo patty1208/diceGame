@@ -13,6 +13,7 @@
 		C9090AD625E4EA0A006459DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9090AD425E4EA0A006459DA /* Main.storyboard */; };
 		C9090AD825E4EA0B006459DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9090AD725E4EA0B006459DA /* Assets.xcassets */; };
 		C9090ADB25E4EA0B006459DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9090AD925E4EA0B006459DA /* LaunchScreen.storyboard */; };
+		C9090AE425E50F50006459DA /* diceShakeSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9090AE325E50F50006459DA /* diceShakeSoundEffect.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C9090AD725E4EA0B006459DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9090ADA25E4EA0B006459DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9090ADC25E4EA0B006459DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9090AE325E50F50006459DA /* diceShakeSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = diceShakeSoundEffect.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C9090AD725E4EA0B006459DA /* Assets.xcassets */,
 				C9090AD925E4EA0B006459DA /* LaunchScreen.storyboard */,
 				C9090ADC25E4EA0B006459DA /* Info.plist */,
+				C9090AE325E50F50006459DA /* diceShakeSoundEffect.mp3 */,
 			);
 			path = diceGame;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9090ADB25E4EA0B006459DA /* LaunchScreen.storyboard in Resources */,
+				C9090AE425E50F50006459DA /* diceShakeSoundEffect.mp3 in Resources */,
 				C9090AD825E4EA0B006459DA /* Assets.xcassets in Resources */,
 				C9090AD625E4EA0A006459DA /* Main.storyboard in Resources */,
 			);
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ4YU874PU;
 				INFOPLIST_FILE = diceGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ4YU874PU;
 				INFOPLIST_FILE = diceGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
